@@ -11,8 +11,15 @@
         return (<h1>First component</h1>)
       }
 
+      function HomePage() {
+        return (
+          <div>
+          <Header />
+        </div>)
+      }
+
       const root = ReactDOM.createRoot(app);
-      root.render(<Header />);
+      root.render(<HomePage />);
     </script>
   </body>
 </html>
