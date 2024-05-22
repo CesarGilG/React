@@ -1,5 +1,22 @@
 <html>
   <body>
-    <div></div>
+    <div id="app"></div>
+    <script type="text/javascript">
+      //select the div element with "app" id
+      const app = document.getElementById("app");
+
+      //create a new h1 element
+      const header = document.createElement("h1");
+
+      //create a new text node for H1 element
+      const text = "Starting with React";
+      const headerContent = document.createTextNode(text);
+
+      //Apend the text to the H1 element
+      header.appendChild(headerContent);
+
+      //palce the H1 element inside de div
+      app.appendChild(header);
+    </script>
   </body>
 </html>
