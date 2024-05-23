@@ -12,7 +12,9 @@
       }
 
       function HomePage() {
+        const [likes, setLikes] = React.useState(0);
         function handleClick() {
+          setLikes(likes + 1)
           console.log("Increment like acount")
           }
 
@@ -21,7 +23,7 @@
           <Header title="First Props" />
           <Header title="Testing diferent titles" />
           <Header />
-            <button onClick={handleClick}>Like</button>
+            <button onClick={handleClick}>Like({likes})</button>
 
         </div>)
       }
