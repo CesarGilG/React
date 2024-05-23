@@ -13,11 +13,18 @@
       }
 
       function HomePage() {
+        const names = ["Pepito Pérez", "Menganito Diaz", "Fulano de Tal"]
+
         return (
           <div>
           <Header title="First Props" />
           <Header title="Testing diferent titles" />
           <Header />
+          <ul>
+            {names.map((name) => (
+              <li>{name}</li>
+            ))}
+            </ul>
         </div>)
       }
 
