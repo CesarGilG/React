@@ -9,7 +9,6 @@
 
       function Header({title}) {
           return (<h1>{title ? title : `Another title`}</h1>)
-
       }
 
       function HomePage() {
@@ -17,13 +16,13 @@
           console.log("Increment like acount")
           }
 
-
-        return (
+          return (
           <div>
           <Header title="First Props" />
           <Header title="Testing diferent titles" />
           <Header />
-            <button onClick={handleClick()}>Like</button>
+            <button onClick={handleClick}>Like</button>
+
         </div>)
       }
 
